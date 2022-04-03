@@ -32,7 +32,7 @@ INFO:     Uvicorn running on http://0.0.0.0:9102 (Press CTRL+C to quit)
 
 # Prometheus Configuration
 
-See [here](https://github.com/cfunkhouser/tailscalesd#prometheus-configuration) for an example of how to configure prometheus to scrape the data serverd by TailscaleSD.
+See [here](https://github.com/cfunkhouser/tailscalesd#prometheus-configuration) for an example of how to configure prometheus to scrape the data served by TailscaleSD.
 
 # Credits
 

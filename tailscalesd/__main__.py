@@ -62,11 +62,11 @@ async def sd():
         service['labels'] = {
             '__meta_tailscale_device_client_version': device['clientVersion'],
             '__meta_tailscale_device_hostname': device['hostname'],
-            '__meta_tailscale_device_authorized': device['authorized'],
+            '__meta_tailscale_device_authorized': str(device['authorized']).lower(),
             '__meta_tailscale_device_id': device['id'],
             '__meta_tailscale_device_name': device['name'],
             '__meta_tailscale_device_os': device['os'],
-            '__meta_tailscale_device_tags': device.get('tags') or [],
+            #'__meta_tailscale_device_tags': device.get('tags') or [],
             '__meta_tailscale_tailnet': settings.tailnet
         }
 
