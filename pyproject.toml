@@ -1,0 +1,40 @@
+[tool.poetry]
+name = "tailscalesd"
+version = "0.0.1"
+description = ""
+authors = ["Marcello Salvati <byt3bl33d3r@pm.me>"]
+readme = "README.md"
+homepage = "https://github.com/byt3bl33d3r/tailscalesd"
+repository = "https://github.com/byt3bl33d3r/tailscalesd"
+exclude = ["tests"]
+include = ["LICENSE"]
+license = ""
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+packages = [
+    { include = "tailscalesd"}
+]
+
+[tool.poetry.scripts]
+tailscalesd = 'tailscalesd.__main__:main'
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.75.1"
+pydantic = "^1.9.0"
+httpx = "^0.22.0"
+uvicorn = "^0.17.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-asyncio = "*"
+flake8 = "*"
+black = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
